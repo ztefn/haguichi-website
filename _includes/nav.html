@@ -1,0 +1,10 @@
+{% assign sorted_pages = site.html_pages | sort:"order" %}
+{% for sorted_page in sorted_pages %}
+  {% unless sorted_page.exclude %}
+  {% assign current = nil %}
+  {% if page.url == sorted_page.url %}
+    {% assign current = ' current' %}
+  {% endif %}
+  <li><a class="page-link{{ current }}" href="{{ sorted_page.url | relative_url }}">{{ sorted_page.title | escape }}</a></li>
+  {% endunless %}
+{% endfor %}

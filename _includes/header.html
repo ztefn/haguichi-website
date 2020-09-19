@@ -1,0 +1,20 @@
+  <header class="site-header primary inverted">
+    <div class="wrapper">
+      <div class="row">
+        <a class="logo" href="{{ "/" | relative_url }}">{% include logos/haguichi.svg %}</a>
+        <nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <span class="bar-top"></span>
+              <span class="bar-mid"></span>
+              <span class="bar-bot"></span>
+            </span>
+          </label>
+          <ul class="trigger">
+          {% include nav.html %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>

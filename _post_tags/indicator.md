@@ -1,0 +1,4 @@
+---
+title: Indicator
+layout: tag
+---
