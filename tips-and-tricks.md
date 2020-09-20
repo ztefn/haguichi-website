@@ -5,14 +5,75 @@ order: 5
 ---
 ## Contents
 
-  1. [Keyboard Shortcuts](#keyboard-shortcuts)
-  2. [Command Line Options](#command-line-options)
+  1. [Command Line Options](#command-line-options)
+  2. [Keyboard Shortcuts](#keyboard-shortcuts)
   3. [Command Variables](#command-variables)
   4. [GSettings](#gsettings) 
       1. [Changing the IP and Hostname Used to Check Your Internet Connectivity](#change-internet-check-ip-hostname)
       2. [Setting a Dynamic Nickname](#set-dynamic-nick)
       3. [Customizing the Network List](#customize-network-list)
 
+
+<h2 id="command-line-options">Command Line Options{% include anchor.html slug='command-line-options' %}</h2>
+<p>Usage: <b>haguichi [options]</b></p>
+<table>
+  <tr>
+    <td>
+      <code>-h, --help</code>
+    </td>
+    <td>
+      Show command line help and exit
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>-v, --version</code>
+    </td>
+    <td>
+      Show version number and exit
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>--license</code>
+    </td>
+    <td>
+      Show license and exit
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>-d, --debug</code>
+    </td>
+    <td>
+      Print debug messages
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>--hidden</code>
+    </td>
+    <td>
+      Start with hidden window
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>--demo</code>
+    </td>
+    <td>
+      Run in demo mode
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <code>--list=FILE</code>
+    </td>
+    <td>
+      Use a text file as list in demo mode
+    </td>
+  </tr>
+</table>
 
 <h2 id="keyboard-shortcuts">Keyboard Shortcuts{% include anchor.html slug='keyboard-shortcuts' %}</h2>
 <table>
@@ -126,67 +187,6 @@ order: 5
     </td>
     <td>
       Quit
-    </td>
-  </tr>
-</table>
-
-<h2 id="command-line-options">Command Line Options{% include anchor.html slug='command-line-options' %}</h2>
-<p>Usage: <b>haguichi [options]</b></p>
-<table>
-  <tr>
-    <td>
-      <code>-h, --help</code>
-    </td>
-    <td>
-      Show command line help and exit
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <code>-v, --version</code>
-    </td>
-    <td>
-      Show version number and exit
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <code>--license</code>
-    </td>
-    <td>
-      Show license and exit
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <code>-d, --debug</code>
-    </td>
-    <td>
-      Print debug messages
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <code>--hidden</code>
-    </td>
-    <td>
-      Start with hidden window
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <code>--demo</code>
-    </td>
-    <td>
-      Run in demo mode
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <code>--list=FILE</code>
-    </td>
-    <td>
-      Use a text file as list in demo mode
     </td>
   </tr>
 </table>
