@@ -247,7 +247,7 @@ order: 5
 <img class="alignright" src="/resources/dconf-editor.png" alt="Dconf Editor" width="415" height="300" />Haguichi stores your preferences (nickname, commands, etc) using GSettings. Most values can be controlled from the preferences dialog or other user interface elements. However, there are some advanced values that can only be changed using _Dconf Editor_ or via _gsettings_ command.
 
 <h3 id="change-internet-check-ip-hostname">Changing the IP and Hostname Used to Check Your Internet Connectivity{% include anchor.html slug='change-internet-check-ip-hostname' %}</h3>
-Affraid of Google following your each and every virtual footstep? Living behind the great firewall of China? Know a faster (yet reliable) server to ping? No problem, changing these addresses is easier than ever!
+Afraid of Google following your each and every virtual footstep? Living behind the great firewall of China? Know a faster (yet reliable) server to ping? No problem, changing these addresses is easier than ever!
 
 For example, to change the default IP value of 8.8.8.8 (Google DNS) to 208.67.222.222 (OpenDNS):
   
