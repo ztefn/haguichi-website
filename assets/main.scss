@@ -725,10 +725,11 @@ body
 {
   .screenshots section .wrapper .row .col > img[tabindex="0"]
   {
-    cursor: pointer;
+    cursor: zoom-in;
 
     &:focus
     {
+      cursor: default;
       max-width: none;
     }
   }
