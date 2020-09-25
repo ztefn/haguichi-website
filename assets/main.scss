@@ -721,6 +721,19 @@ body
   }
 }
 
+@media screen and (min-width: 801px)
+{
+  .screenshots section .wrapper .row .col > img[tabindex="0"]
+  {
+    cursor: pointer;
+
+    &:focus
+    {
+      max-width: none;
+    }
+  }
+}
+
 
 /**
  * Tags
