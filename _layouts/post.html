@@ -9,15 +9,15 @@ layout: page
     {% if page.author %}
       by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
     {% endif %}
-    <ul class="tags">
-    {% for tag in page.tags %}
-      {% assign post_tags = site.post_tags | where: 'slug', tag %}
-      {% for post_tag in post_tags %}
-        <li><a href="{{ post_tag.url }}" class="tag">{{ post_tag.title }}</a></li>
-      {% endfor %}
-    {% endfor %}
-    </ul>
   </p>
+  <ul class="tags">
+  {% for tag in page.tags %}
+    {% assign post_tags = site.post_tags | where: 'slug', tag %}
+    {% for post_tag in post_tags %}
+      <li><a href="{{ post_tag.url }}" class="tag">{{ post_tag.title }}</a></li>
+    {% endfor %}
+  {% endfor %}
+  </ul>
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
