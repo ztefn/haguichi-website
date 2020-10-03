@@ -10,5 +10,5 @@ order: 1
   <div class="col"><a href="/news/release142/">Version 1.4.2 release notes</a></div>
 </div>
 <div>
-  <img src="/resources/teaser.png" srcset="/resources/teaser-2x.png 2x" alt="Main Window" class="aligncenter" />
+  <img src="/resources/teaser.png" srcset="/resources/teaser-2x.png 2x" alt="Main Window" class="aligncenter" width="614" height="200" />
 </div>
