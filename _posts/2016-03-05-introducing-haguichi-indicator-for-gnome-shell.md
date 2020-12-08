@@ -1,6 +1,6 @@
 ---
 title: Introducing Haguichi Indicator for GNOME Shell
-date: 2016-03-05T15:01:48+01:00
+date: 2016-03-05T15:01:48+0100
 author: ztefn
 layout: post
 permalink: /news/introducing-haguichi-indicator-for-gnome-shell/

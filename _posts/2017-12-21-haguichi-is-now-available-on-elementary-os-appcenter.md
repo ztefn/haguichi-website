@@ -1,6 +1,6 @@
 ---
 title: Haguichi Is Now Available on Elementary OS AppCenter
-date: 2017-12-21T23:57:45+01:00
+date: 2017-12-21T23:57:45+0100
 author: ztefn
 layout: post
 permalink: /news/haguichi-is-now-available-on-elementary-os-appcenter/

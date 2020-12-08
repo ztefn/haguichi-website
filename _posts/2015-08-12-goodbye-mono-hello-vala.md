@@ -1,6 +1,6 @@
 ---
 title: Goodbye Mono, Hello Vala!
-date: 2015-08-12T20:30:51+02:00
+date: 2015-08-12T20:30:51+0200
 author: ztefn
 layout: post
 permalink: /news/goodbye-mono-hello-vala/
