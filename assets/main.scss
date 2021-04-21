@@ -195,7 +195,7 @@ body
     font-size: 0.75em;
     font-family: monospace;
     overflow-wrap: break-word;
-    padding: 0.3em 0.5em;
+    padding: 0.2em 0.5em;
   }
 
   code
@@ -214,6 +214,21 @@ body
 
     &.root::before {
       content: "#";
+    }
+  }
+
+  a.copy-to-clipboard
+  {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    padding-left: 4px;
+    vertical-align: middle;
+
+    svg
+    {
+      height: 18px;
+      width: 18px;
     }
   }
 

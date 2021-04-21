@@ -19,6 +19,6 @@ For the moment, there is one thing missing compared to the vanilla version. That
 I hope you elementary OS users out there like it! In case you have some questions, requests, ideas or other feedback you can either leave a comment below, <a href="https://github.com/ztefn/haguichi/issues" target="_blank">open an issue on GitHub</a> or use one of the other [contact](/about/#contact) options.
 
 _PS: If you already have Haguichi installed using the PPA repository and want to remove it (so that you only have the AppCenter version), you can do so by entering the following commands in a terminal:_<br>
-<code class="user">sudo apt update</code><br>
-<code class="user">sudo apt install ppa-purge</code><br>
-<code class="user">sudo ppa-purge ppa:webupd8team/haguichi</code>
+<code class="user clipboard">sudo apt update</code><br>
+<code class="user clipboard">sudo apt install ppa-purge</code><br>
+<code class="user clipboard">sudo ppa-purge ppa:webupd8team/haguichi</code>

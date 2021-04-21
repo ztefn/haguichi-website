@@ -251,18 +251,18 @@ Afraid of Google following your each and every virtual footstep? Living behind t
 
 For example, to change the default IP value of 8.8.8.8 (Google DNS) to 208.67.222.222 (OpenDNS):
   
-<code class="user">gsettings set com.github.ztefn.haguichi.config check-internet-ip 208.67.222.222</code>
+<code class="user clipboard">gsettings set com.github.ztefn.haguichi.config check-internet-ip 208.67.222.222</code>
 
 For example, to change the default hostname value of www.google.com to www.amazon.com:
   
-<code class="user">gsettings set com.github.ztefn.haguichi.config check-internet-hostname www.amazon.com</code>
+<code class="user clipboard">gsettings set com.github.ztefn.haguichi.config check-internet-hostname www.amazon.com</code>
 
 Keep in mind that Haguichi checks internet connectivity by pinging the IP first. Only in case this fails, it will try to resolve the hostname.
 
 <h3 id="set-dynamic-nick">Setting a Dynamic Nickname{% include anchor.html slug='set-dynamic-nick' %}</h3>
 The nickname Haguichi gives to the client can be set to a dynamic environment variable. In fact the default value is one, namely your username. These variables can be used within the &#8220;Change Nick&#8221; dialog too. But let&#8217;s keep focus on GSettings. Here&#8217;s an example to set the nickname to your real name:
   
-<code class="user">gsettings set com.github.ztefn.haguichi.config nickname %REALNAME</code>
+<code class="user clipboard">gsettings set com.github.ztefn.haguichi.config nickname %REALNAME</code>
 
 All available variables are:
 
