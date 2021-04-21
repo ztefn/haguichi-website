@@ -19,7 +19,7 @@ order: 5
 <table>
   <tr>
     <td>
-      <code>-h, --help</code>
+      <code>-h</code>, <code>--help</code>
     </td>
     <td>
       Show command line help and exit
@@ -27,7 +27,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <code>-v, --version</code>
+      <code>-v</code>, <code>--version</code>
     </td>
     <td>
       Show version number and exit
@@ -43,7 +43,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <code>-d, --debug</code>
+      <code>-d</code>, <code>--debug</code>
     </td>
     <td>
       Print debug messages
