@@ -294,7 +294,7 @@ All available variables are:
 </table>
 
 <h3 id="customize-network-list">Customizing the Network List{% include anchor.html slug='customize-network-list' %}</h3>
-The possibilities on how to display the members in your network list are endless, because it’s template based. There are four templates (<b>member-template-large</b>, <b>member-template-small</b>, <b>network-template-large</b> and <b>network-template-small</b>). For markup you can use <a href="https://developer.gnome.org/pango/stable/pango-Markup.html" target="_blank">Pango</a> (HTML like) syntax and for linebreaks simply use <strong>&lt;br&gt;</strong>. All available variables are:
+The possibilities on how to display the members in your network list are endless, because it’s template based. There are four templates (<b>member-template-large</b>, <b>member-template-small</b>, <b>network-template-large</b> and <b>network-template-small</b>). For markup you can use <a href="https://docs.gtk.org/Pango/pango_markup.html#pango-markup" target="_blank">Pango</a> (HTML like) syntax and for linebreaks simply use <strong>&lt;br&gt;</strong>. All available variables are:
 
 #### Network
 
