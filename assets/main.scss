@@ -776,34 +776,34 @@ body
     color: $base-bg-color;
     display: inline-block;
     position: relative;
-    border-radius: 0.2em 0 0 0.2em;
+    border-radius: 0 0.2em 0.2em 0;
     font-family: $alt-font-family;
     height: 1.4em;
-    line-height: 1.4em;
-    padding: 0 1em 0 1.2em;
+    line-height: 1.3em;
+    padding: 0 0.7em 0 1.3em;
     margin: 0 0 0.3em 0;
 
-    &::before
+    &::after
     {
       background: $base-bg-color;
       border-radius: 0.5em;
       content: '';
       height: 0.4em;
-      left: 0.5em;
+      left: 0.6em;
       position: absolute;
       width: 0.4em;
       top: 0.5em;
     }
 
-    &::after
+    &::before
     {
       background: $base-bg-color;
       border-bottom: 0.7em solid transparent;
-      border-left: 0.5em solid $base-fg-color;
+      border-right: 0.6em solid $base-fg-color;
       border-top: 0.7em solid transparent;
       content: '';
       position: absolute;
-      right: 0;
+      left: 0;
       top: 0;
     }
   }
