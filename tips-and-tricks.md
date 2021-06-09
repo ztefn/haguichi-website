@@ -76,6 +76,7 @@ order: 5
 </table>
 
 <h2 id="keyboard-shortcuts">Keyboard Shortcuts{% include anchor.html slug='keyboard-shortcuts' %}</h2>
+<h3>General</h3>
 <table>
   <tr>
     <td>
@@ -95,6 +96,14 @@ order: 5
   </tr>
   <tr>
     <td>
+      <kbd>F10</kbd>
+    </td>
+    <td>
+      Open menu
+    </td>
+  </tr>
+  <tr>
+    <td>
       <kbd>Ctrl</kbd>+<kbd>O</kbd>
     </td>
     <td>
@@ -109,6 +118,33 @@ order: 5
       Disconnect
     </td>
   </tr>
+  <tr>
+    <td>
+      <kbd>Ctrl</kbd>+<kbd>P</kbd>
+    </td>
+    <td>
+      Show preferences
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <kbd>Ctrl</kbd>+<kbd>?</kbd>
+    </td>
+    <td>
+      Show keyboard shortcuts
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <kbd>Ctrl</kbd>+<kbd>Q</kbd>
+    </td>
+    <td>
+      Quit the application
+    </td>
+  </tr>
+</table>
+<h3>Network List</h3>
+<table>
   <tr>
     <td>
       <kbd>Ctrl</kbd>+<kbd>J</kbd>
@@ -151,14 +187,6 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>P</kbd>
-    </td>
-    <td>
-      Show preferences
-    </td>
-  </tr>
-  <tr>
-    <td>
       <kbd>Ctrl</kbd>+<kbd>[</kbd>
     </td>
     <td>
@@ -179,14 +207,6 @@ order: 5
     </td>
     <td>
       Execute available commands by corresponding number
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <kbd>Ctrl</kbd>+<kbd>Q</kbd>
-    </td>
-    <td>
-      Quit
     </td>
   </tr>
 </table>
