@@ -4,8 +4,8 @@ logo: logos/debian.svg
 order: 2
 ---
 Execute the following commands in a terminal:<br>
-<code class="user clipboard">sudo sh -c 'echo "deb http://ppa.launchpad.net/ztefn/haguichi-debian/ubuntu bionic main" &gt; /etc/apt/sources.list.d/haguichi-debian.list'</code><br>
-<code class="user clipboard">sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EB75B0EBE2C821AC</code><br>
+<code class="user clipboard">curl 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xd0712f35b20337c00c94e829eb75b0ebe2c821ac' | gpg --dearmor | sudo tee /usr/share/keyrings/haguichi-debian.gpg &gt; /dev/null</code><br>
+<code class="user clipboard">echo "deb [signed-by=/usr/share/keyrings/haguichi-debian.gpg] http://ppa.launchpad.net/ztefn/haguichi-debian/ubuntu bionic main" | sudo tee /etc/apt/sources.list.d/haguichi-debian.list</code><br>
 <code class="user clipboard">sudo apt update</code><br>
 <code class="user clipboard">sudo apt install -y haguichi</code>
 
