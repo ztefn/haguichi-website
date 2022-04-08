@@ -1,12 +1,12 @@
 <footer class="site-footer inverted">
   <div class="wrapper">
     <div class="row">
-      <div class="col copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.author_website}}" target="_blank">{{ site.author | escape }}</a></div>
+      <div class="col copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.author_website}}" rel="nofollow" target="_blank">{{ site.author | escape }}</a></div>
       <div class="col website">
       {% if page.title == 404 %}
-        UFOs designed by<a href="https://www.freepik.com" target="_blank">{% include logos/freepik.svg %}</a>
+        UFOs designed by<a href="https://www.freepik.com" rel="nofollow" target="_blank">{% include logos/freepik.svg %}</a>
       {% else %}
-        This website is made with <a class="jekyll" href="https://jekyllrb.com" title="Jekyll" target="_blank">{% include logos/jekyll.svg %}</a>
+        This website is made with <a class="jekyll" href="https://jekyllrb.com" title="Jekyll" rel="nofollow" target="_blank">{% include logos/jekyll.svg %}</a>
       {% endif %}
       </div>
       <div class="col links">
