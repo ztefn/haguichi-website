@@ -5,7 +5,7 @@ order: 8
 ---
 Support development by making a donation! You can donate any amount you wish by clicking on the button below:
 
-<p><a class="button" href="https://www.paypal.me/ztefn" target="_blank">Donate via PayPal {% include logos/paypal.svg %}</a></p><br>
+<p><a class="button" href="https://www.paypal.me/ztefn" rel="nofollow" target="_blank">Donate via PayPal {% include logos/paypal.svg %}</a></p><br>
 If you donate €10 or more, you may provide a website URL that your name in the list below should link to for a full year. Donate €25 or more and your link will stay forever!
 
 <h2 id="donations">List of Donations{% include anchor.html slug='donations' %}</h2>
