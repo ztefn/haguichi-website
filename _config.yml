@@ -44,6 +44,7 @@ statcounter:
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-last-modified-at
 exclude:
   - Gemfile
   - Gemfile.lock
