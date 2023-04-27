@@ -18,6 +18,40 @@ $base-bg-color: #fcfbf3;
 $primary-fg-color: #ff4444;
 $primary-bg-color: #ffe0cc;
 
+$base-fg-color-dark: #e3bf9e;
+$base-lt-color-dark: #4d3629;
+$base-bg-color-dark: #402b1f;
+
+$primary-fg-color-dark: #e63931;
+$primary-bg-color-dark: #4d0502;
+
+:root
+{
+  --base-fg-color: #{$base-fg-color};
+  --base-lt-color: #{$base-lt-color};
+  --base-bg-color: #{$base-bg-color};
+  --base-sw-color: #{mix($base-bg-color, $base-fg-color, 50%)};
+
+  --primary-fg-color: #{$primary-fg-color};
+  --primary-bg-color: #{$primary-bg-color};
+  --primary-sw-color: #{mix($primary-bg-color, $primary-fg-color, 50%)};
+}
+
+@media (prefers-color-scheme: dark)
+{
+  :root
+  {
+    --base-fg-color: #{$base-fg-color-dark};
+    --base-lt-color: #{$base-lt-color-dark};
+    --base-bg-color: #{$base-bg-color-dark};
+    --base-sw-color: #{mix($base-bg-color-dark, $base-fg-color-dark, 50%)};
+
+    --primary-fg-color: #{$primary-fg-color-dark};
+    --primary-bg-color: #{$primary-bg-color-dark};
+    --primary-sw-color: #{mix($primary-bg-color-dark, $primary-fg-color-dark, 50%)};
+  }
+}
+
 
 /**
  * Fonts
@@ -33,8 +67,8 @@ $primary-bg-color: #ffe0cc;
  */
 body
 {
-  background: $base-bg-color;
-  color: $base-fg-color;
+  background: var(--base-bg-color);
+  color: var(--base-fg-color);
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin: 0;
@@ -42,8 +76,8 @@ body
 
   a
   {
-    color: $base-fg-color;
-    border-color: $base-fg-color;
+    color: var(--base-fg-color);
+    border-color: var(--base-fg-color);
     line-height: 1.5em;
     text-decoration: none;
 
@@ -55,11 +89,11 @@ body
 
     &.button
     {
-      color: $base-bg-color;
-      background: $base-fg-color;
+      color: var(--base-bg-color);
+      background: var(--base-fg-color);
       border: none !important;
       border-radius: 0.3em;
-      box-shadow: 0 3px 0 mix($base-bg-color, $base-fg-color, 50%);
+      box-shadow: 0 3px 0 var(--base-sw-color);
       font-size: 1.2em;
       padding: 0.4em 1.2em;
       white-space: nowrap;
@@ -71,7 +105,7 @@ body
 
         path
         {
-          fill: $base-bg-color;
+          fill: var(--base-bg-color);
         }
       }
     }
@@ -157,14 +191,14 @@ body
     path#bg,
     #bg path
     {
-      fill: $base-bg-color;
+      fill: var(--base-bg-color);
     }
 
     path,
     path#fg,
     #fg path
     {
-      fill: $base-fg-color;
+      fill: var(--base-fg-color);
     }
   }
 
@@ -176,9 +210,9 @@ body
 
   kbd
   {
-    border: 1px solid $base-fg-color;
+    border: 1px solid var(--base-fg-color);
     border-radius: 0.3em;
-    box-shadow: 0 2px 0 $base-fg-color;
+    box-shadow: 0 2px 0 var(--base-fg-color);
     display: inline-block;
     font-size: 0.75em;
     line-height: 1.4;
@@ -190,7 +224,7 @@ body
 
   code, pre
   {
-    background: $base-lt-color;
+    background: var(--base-lt-color);
     border-radius: 0.3em;
     font-size: 0.75em;
     font-family: monospace;
@@ -437,7 +471,7 @@ body
 
       [class*='bar-']
       {
-        background: $primary-bg-color;
+        background: var(--primary-bg-color);
         display: block;
         transform: rotate(0deg);
         border-radius: 2px;
@@ -476,7 +510,7 @@ body
     }
     input:checked ~ .trigger
     {
-      background-color: $primary-fg-color;
+      background-color: var(--primary-fg-color);
       display: block;
       position: absolute;
       margin-top: 43px;
@@ -501,18 +535,18 @@ body
 {
   .inverted
   {
-    color: $primary-bg-color;
-    background-color: $base-fg-color;
+    color: var(--primary-bg-color);
+    background-color: var(--base-fg-color);
 
     a
     {
-      color: $primary-bg-color;
-      border-color: $primary-bg-color;
+      color: var(--primary-bg-color);
+      border-color: var(--primary-bg-color);
 
       &.button
       {
-        color: $base-fg-color;
-        background: $primary-bg-color;
+        color: var(--base-fg-color);
+        background: var(--primary-bg-color);
       }
     }
 
@@ -521,14 +555,14 @@ body
       path#bg,
       #bg path
       {
-        fill: $base-fg-color;
+        fill: var(--base-fg-color);
       }
 
       path,
       path#fg,
       #fg path
       {
-        fill: $primary-bg-color;
+        fill: var(--primary-bg-color);
       }
     }
   }
@@ -542,19 +576,19 @@ body
 {
   .primary
   {
-    color: $primary-fg-color;
-    background-color: $primary-bg-color;
+    color: var(--primary-fg-color);
+    background-color: var(--primary-bg-color);
 
     a
     {
-      color: $primary-fg-color;
-      border-color: $primary-fg-color;
+      color: var(--primary-fg-color);
+      border-color: var(--primary-fg-color);
 
       &.button
       {
-        color: $primary-bg-color;
-        background: $primary-fg-color;
-        box-shadow: 0 3px 0 mix($primary-bg-color, $primary-fg-color, 50%);
+        color: var(--primary-bg-color);
+        background: var(--primary-fg-color);
+        box-shadow: 0 3px 0 var(--primary-sw-color);
       }
     }
 
@@ -563,31 +597,31 @@ body
       path#bg,
       #bg path
       {
-        fill: $primary-bg-color;
+        fill: var(--primary-bg-color);
       }
 
       path,
       path#fg,
       #fg path
       {
-        fill: $primary-fg-color;
+        fill: var(--primary-fg-color);
       }
     }
 
     &.inverted
     {
-      color: $primary-bg-color;
-      background-color: $primary-fg-color;
+      color: var(--primary-bg-color);
+      background-color: var(--primary-fg-color);
 
       a
       {
-        color: $primary-bg-color;
-        border-color: $primary-bg-color;
+        color: var(--primary-bg-color);
+        border-color: var(--primary-bg-color);
 
         &.button
         {
-          color: $primary-fg-color;
-          background: $primary-bg-color;
+          color: var(--primary-fg-color);
+          background: var(--primary-bg-color);
         }
       }
 
@@ -596,14 +630,14 @@ body
         path#bg,
         #bg path
         {
-          fill: $primary-fg-color;
+          fill: var(--primary-fg-color);
         }
 
         path,
         path#fg,
         #fg path
         {
-          fill: $primary-bg-color;
+          fill: var(--primary-bg-color);
         }
       }
     }
@@ -715,7 +749,7 @@ body
   {
     h1
     {
-      color: $primary-fg-color;
+      color: var(--primary-fg-color);
       font-family: $base-font-family;
       font-size: 8em;
       margin: 0;
@@ -771,9 +805,9 @@ body
 
   .tag
   {
-    background: $base-fg-color;
+    background: var(--base-fg-color);
     border-width: 0 !important;
-    color: $base-bg-color;
+    color: var(--base-bg-color);
     display: inline-block;
     position: relative;
     border-radius: 0 0.2em 0.2em 0;
@@ -785,7 +819,7 @@ body
 
     &::after
     {
-      background: $base-bg-color;
+      background: var(--base-bg-color);
       border-radius: 0.5em;
       content: '';
       height: 0.4em;
@@ -797,9 +831,9 @@ body
 
     &::before
     {
-      background: $base-bg-color;
+      background: var(--base-bg-color);
       border-bottom: 0.7em solid transparent;
-      border-right: 0.6em solid $base-fg-color;
+      border-right: 0.6em solid var(--base-fg-color);
       border-top: 0.7em solid transparent;
       content: '';
       position: absolute;
@@ -817,7 +851,7 @@ body
 {
   ul.post-list
   {
-    border-left: 1px dashed $base-fg-color;
+    border-left: 1px dashed var(--base-fg-color);
     list-style-position: inside;
     list-style-type: none;
     margin: 3em 0 1em 2.5em;
@@ -830,8 +864,8 @@ body
 
       .post-meta
       {
-        background-color: $primary-fg-color;
-        color: $primary-bg-color;
+        background-color: var(--primary-fg-color);
+        color: var(--primary-bg-color);
         border-radius: 0.3em;
         height: 1.4em;
         line-height: 1.4em;
@@ -841,7 +875,7 @@ body
 
       &:last-child
       {
-        background-color: $base-bg-color;
+        background-color: var(--base-bg-color);
       }
 
       h2
