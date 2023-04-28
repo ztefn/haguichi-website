@@ -12,14 +12,12 @@ $base-font-family: Dosis, sans-serif;
 $base-font-size: 20px;
 
 $base-fg-color: #503838;
-$base-lt-color: #f6f5e8;
 $base-bg-color: #fcfbf3;
 
 $primary-fg-color: #ff4444;
 $primary-bg-color: #ffe0cc;
 
 $base-fg-color-dark: #e3bf9e;
-$base-lt-color-dark: #4d3629;
 $base-bg-color-dark: #402b1f;
 
 $primary-fg-color-dark: #ff4444;
@@ -28,7 +26,7 @@ $primary-bg-color-dark: #4d0502;
 :root
 {
   --base-fg-color: #{$base-fg-color};
-  --base-lt-color: #{$base-lt-color};
+  --base-lt-color: #{mix($base-bg-color, $base-fg-color, 97%)};
   --base-bg-color: #{$base-bg-color};
   --base-sw-color: #{mix($base-bg-color, $base-fg-color, 50%)};
 
@@ -42,7 +40,7 @@ $primary-bg-color-dark: #4d0502;
   :root
   {
     --base-fg-color: #{$base-fg-color-dark};
-    --base-lt-color: #{$base-lt-color-dark};
+    --base-lt-color: #{mix($base-bg-color-dark, $base-fg-color-dark, 93%)};
     --base-bg-color: #{$base-bg-color-dark};
     --base-sw-color: #{mix($base-bg-color-dark, $base-fg-color-dark, 50%)};
 
