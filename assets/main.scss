@@ -40,7 +40,7 @@ $primary-bg-color-dark: #4d0502;
   :root
   {
     --base-fg-color: #{$base-fg-color-dark};
-    --base-lt-color: #{mix($base-bg-color-dark, $base-fg-color-dark, 93%)};
+    --base-lt-color: #{mix($base-bg-color-dark, $base-fg-color-dark, 95%)};
     --base-bg-color: #{$base-bg-color-dark};
     --base-sw-color: #{mix($base-bg-color-dark, $base-fg-color-dark, 50%)};
 
