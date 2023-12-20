@@ -10,4 +10,4 @@ In the world of Ubuntu and many of it&#8217;s derivatives, Haguichi has been pro
 
 The extension is managed on <a href="https://github.com/ztefn/gse-haguichi-indicator" target="_blank">GitHub</a>. So get your ass over there if you want to report issues (bugs or feature requests) or even create your own fork!
 
-<img class="aligncenter" width="720" height="450" src="https://github.com/ztefn/gse-haguichi-indicator/raw/master/screenshot.png" alt="Haguichi Indicator for GNOME Shell" />
+<img class="aligncenter" width="720" height="450" src="https://raw.githubusercontent.com/ztefn/gse-haguichi-indicator/4cf9bd41e684d5d52a7ef04818c19c527f2debf4/screenshot.png" alt="Haguichi Indicator for GNOME Shell" />
