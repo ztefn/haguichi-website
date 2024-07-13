@@ -12,7 +12,9 @@ This means <a href="https://elementary.io/" target="_blank">elementary OS</a> us
 
 [<img class="aligncenter" src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter" />](https://appcenter.elementary.io/com.github.ztefn.haguichi)
 
-<img style="float: right;" src="https://raw.githubusercontent.com/ztefn/haguichi/elementary-loki/data/screenshots/1.png" alt="Haguichi on elementary OS" />The version shipped through AppCenter is specially crafted to fit in with elementary OS even better than before. It&#8217;s equipped with a colored headerbar for instant recognizability and has received other small visual tweaks.
+The version shipped through AppCenter is specially crafted to fit in with elementary OS even better than before. It&#8217;s equipped with a colored headerbar for instant recognizability and has received other small visual tweaks.
+
+<img class="aligncenter" style="margin: -40px auto;" src="https://raw.githubusercontent.com/ztefn/haguichi/elementary-loki/data/screenshots/1.png" alt="Haguichi on elementary OS 0.4 Loki from AppCenter" />
 
 For the moment, there is one thing missing compared to the vanilla version. That is the indicator in the panel. Currently, this is a separate package and that&#8217;s not very practical for distribution through AppCenter. So my plan is to integrate the indicator into Haguichi itself in one of the next releases.
 
