@@ -899,3 +899,83 @@ body
 }
 
 
+/**
+ * Image slider based on: https://github.com/mursalfk/Comparison-Slider
+ */
+body
+{
+  .image-slider
+  {
+    font-size: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    --position: 50%;
+
+    .image-container
+    {
+      .slider-image
+      {
+        background-color: var(--base-bg-color);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+      }
+
+      .image-before
+      {
+        position: absolute;
+        inset: 0;
+        width: var(--position);
+      }
+    }
+
+    .slider
+    {
+      cursor: col-resize;
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slider:focus-visible ~ .slider-button
+    {
+      outline: 5px solid black;
+      outline-offset: 3px;
+    }
+
+    .slider-line
+    {
+      background-color: var(--primary-fg-color);
+      position: absolute;
+      inset: 0;
+      left: var(--position);
+      width: 0.1rem;
+      height: 100%;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+
+    .slider-button
+    {
+      background-color: var(--primary-fg-color);
+      border-radius: 100vw;
+      box-shadow: 1px 1px 1px rgba(8, 3, 3, 0.5);
+      color: var(--primary-bg-color);
+      position: absolute;
+      display: grid;
+      place-items: center;
+      top: 50%;
+      left: var(--position);
+      width: 3rem;
+      height: 3rem;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+  }
+}
+
+

@@ -24,3 +24,11 @@ function copyPrevElement(item) {
   textArea.remove();
 }
 
+
+const container = document.querySelector('.image-slider');
+const slider = document.querySelector('.slider');
+
+slider.addEventListener('input', function(e) {
+  container.style.setProperty('--position', e.target.value + '%');
+});
+
