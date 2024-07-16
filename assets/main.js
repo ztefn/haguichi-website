@@ -26,7 +26,9 @@ function copyPrevElement(item) {
 
 
 const container = document.querySelector('.image-slider');
-const slider = document.querySelector('.slider');
+const slider = container.querySelector('.slider');
+
+container.style.setProperty('--position', slider.value + '%');
 
 slider.addEventListener('input', function(e) {
   container.style.setProperty('--position', e.target.value + '%');

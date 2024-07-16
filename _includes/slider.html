@@ -1,10 +1,10 @@
 <div class="caption center-text {% if include.align == 'left' or 'right' %}align{{ include.align }}{% endif %}">
   <div class="image-slider {% if include.align == 'center' %}aligncenter{% endif %}" style="max-width: {{ include.width }}px; max-height: {{ include.height }}px;">
     <div class="image-container">
-      <img class="image-before slider-image image-1" src="{{ include.image1_src }}" alt="{{ include.image1_alt }}">
-      <img class="image-after slider-image image-2" src="{{ include.image2_src }}" alt="{{ include.image2_alt }}">
+      <img class="image-before slider-image image-1" src="{{ include.image1_src }}" srcset="{{ include.image1_srcset }}" alt="{{ include.image1_alt }}">
+      <img class="image-after slider-image image-2" src="{{ include.image2_src }}" srcset="{{ include.image2_srcset }}" alt="{{ include.image2_alt }}">
     </div>
-    <input type="range" min="0" max="100" value="50" class="slider">
+    <input type="range" min="0" max="100" value="{{ include.position || 50 }}" class="slider">
     <div class="slider-line" aria-hidden="true"></div>
     <div class="slider-button" aria-hidden="true">
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256">
