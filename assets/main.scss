@@ -908,7 +908,6 @@ body
   {
     font-size: 0;
     margin-bottom: 20px;
-    overflow: hidden;
     position: relative;
     --position: 50%;
 
@@ -963,7 +962,7 @@ body
     {
       background-color: var(--primary-fg-color);
       border-radius: 100vw;
-      box-shadow: 1px 1px 1px rgba(8, 3, 3, 0.5);
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
       color: var(--primary-bg-color);
       position: absolute;
       display: grid;
