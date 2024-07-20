@@ -35,14 +35,6 @@ order: 5
   </tr>
   <tr>
     <td>
-      <code>--license</code>
-    </td>
-    <td>
-      Show license and exit
-    </td>
-  </tr>
-  <tr>
-    <td>
       <code>-d</code>, <code>--debug</code>
     </td>
     <td>
@@ -51,10 +43,10 @@ order: 5
   </tr>
   <tr>
     <td>
-      <code>--hidden</code>
+      <code>-b</code>, <code>--background</code>
     </td>
     <td>
-      Start with hidden window
+      Run in background
     </td>
   </tr>
   <tr>
@@ -120,7 +112,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>P</kbd>
+      <kbd>Ctrl</kbd>+<kbd>,</kbd>
     </td>
     <td>
       Show preferences
@@ -314,7 +306,7 @@ All available variables are:
 </table>
 
 <h3 id="customize-network-list">Customizing the Network List{% include anchor.html slug='customize-network-list' %}</h3>
-The possibilities on how to display the members in your network list are endless, because it’s template based. There are four templates (<b>member-template-large</b>, <b>member-template-small</b>, <b>network-template-large</b> and <b>network-template-small</b>). For markup you can use <a href="https://docs.gtk.org/Pango/pango_markup.html#pango-markup" target="_blank">Pango</a> (HTML like) syntax and for linebreaks simply use <strong>&lt;br&gt;</strong>. All available variables are:
+The possibilities on how to display the members in your network list are endless, because it’s template based. There are two templates, <b>member-template</b> and <b>network-template</b>. For markup you can use <a href="https://docs.gtk.org/Pango/pango_markup.html#pango-markup" target="_blank">Pango</a> (HTML like) syntax and for linebreaks simply use <strong>&lt;br&gt;</strong>. All available variables are:
 
 #### Network
 
