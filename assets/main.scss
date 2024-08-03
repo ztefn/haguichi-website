@@ -743,6 +743,26 @@ body
     }
   }
 
+  section#flathub.download-group
+  {
+    .logo svg
+    {
+      height: 28px;
+    }
+
+    a.button
+    {
+      display: inline-block;
+      line-height: 0;
+      padding: 0.6em 1.2em;
+
+      svg
+      {
+        height: 40px;
+      }
+    }
+  }
+
   section[class^="four-o-"]
   {
     h1
