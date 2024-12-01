@@ -8,5 +8,5 @@ order: 3
     <p>Haguichi allows you to create your own specialized commands to run on your network peers.</p>
     <p><a class="button" href="/tips-and-tricks/#command-variables">View all variables</a></p>
   </div>
-  <div class="col image"><img src="/resources/edit-command-dialog.png" srcset="/resources/edit-command-dialog-2x.png 2x" alt="Edit Command Dialog" width="562" height="414" /></div>
+  <div class="col image"><img src="/resources/edit-command-dialog.png" srcset="/resources/edit-command-dialog-2x.png 2x" alt="Edit Command Dialog" width="562" height="473" /></div>
 </div>
