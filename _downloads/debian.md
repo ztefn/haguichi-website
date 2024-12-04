@@ -1,5 +1,5 @@
 ---
-title: Debian, Raspberry Pi OS and Kali Linux
+title: Debian, Raspberry Pi OS and MX Linux
 logo: logos/debian.svg
 order: 2
 ---
