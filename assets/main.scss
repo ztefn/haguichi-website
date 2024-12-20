@@ -2,6 +2,9 @@
 ---
 @charset "utf-8";
 
+@use "fontface" as *;
+@use "sass:color";
+
 
 /**
  * Variables
@@ -26,13 +29,13 @@ $primary-bg-color-dark: #4d0502;
 :root
 {
   --base-fg-color: #{$base-fg-color};
-  --base-lt-color: #{mix($base-bg-color, $base-fg-color, 97%)};
+  --base-lt-color: #{color.mix($base-bg-color, $base-fg-color, 97%)};
   --base-bg-color: #{$base-bg-color};
-  --base-sw-color: #{mix($base-bg-color, $base-fg-color, 50%)};
+  --base-sw-color: #{color.mix($base-bg-color, $base-fg-color, 50%)};
 
   --primary-fg-color: #{$primary-fg-color};
   --primary-bg-color: #{$primary-bg-color};
-  --primary-sw-color: #{mix($primary-bg-color, $primary-fg-color, 50%)};
+  --primary-sw-color: #{color.mix($primary-bg-color, $primary-fg-color, 50%)};
 }
 
 @media (prefers-color-scheme: dark)
@@ -40,13 +43,13 @@ $primary-bg-color-dark: #4d0502;
   :root
   {
     --base-fg-color: #{$base-fg-color-dark};
-    --base-lt-color: #{mix($base-bg-color-dark, $base-fg-color-dark, 95%)};
+    --base-lt-color: #{color.mix($base-bg-color-dark, $base-fg-color-dark, 95%)};
     --base-bg-color: #{$base-bg-color-dark};
-    --base-sw-color: #{mix($base-bg-color-dark, $base-fg-color-dark, 50%)};
+    --base-sw-color: #{color.mix($base-bg-color-dark, $base-fg-color-dark, 50%)};
 
     --primary-fg-color: #{$primary-fg-color-dark};
     --primary-bg-color: #{$primary-bg-color-dark};
-    --primary-sw-color: #{mix($primary-bg-color-dark, $primary-fg-color-dark, 50%)};
+    --primary-sw-color: #{color.mix($primary-bg-color-dark, $primary-fg-color-dark, 50%)};
   }
 }
 
@@ -54,7 +57,6 @@ $primary-bg-color-dark: #4d0502;
 /**
  * Fonts
  */
-@import 'fontface';
 @include fontFace('Caveat', 'fonts/caveat');
 @include fontFace('Dosis',  'fonts/dosis');
 @include fontFace('Dosis',  'fonts/dosis-bold', normal, bold);
