@@ -7,6 +7,13 @@
   <meta name="theme-color" content="#ff4444">{% if page.title == "Tags" or page.layout == "tag" %}
   <meta name="robots" content="noindex">{% endif %}
 
+  <meta property="og:image" content="{{ site.url }}/social-banner.png">
+  <meta property="og:title" content="{% if page.title == "Home" %}{{ site.title | escape }}{% else %}{{ page.title | escape }}{% endif %}">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:image" content="{{ site.url }}/social-banner.png">
+  <meta property="twitter:title" content="{% if page.title == "Home" %}{{ site.title | escape }}{% else %}{{ page.title | escape }}{% endif %}">
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
