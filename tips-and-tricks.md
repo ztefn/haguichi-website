@@ -19,7 +19,7 @@ order: 5
 <table>
   <tr>
     <td>
-      <code>-h</code>, <code>--help</code>
+      <code>-h</code>, <code class="nowrap">--help</code>
     </td>
     <td>
       Show command line help and exit
@@ -27,7 +27,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <code>-v</code>, <code>--version</code>
+      <code>-v</code>, <code class="nowrap">--version</code>
     </td>
     <td>
       Show version number and exit
@@ -35,7 +35,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <code>-d</code>, <code>--debug</code>
+      <code>-d</code>, <code class="nowrap">--debug</code>
     </td>
     <td>
       Print debug messages
@@ -43,7 +43,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <code>-b</code>, <code>--background</code>
+      <code>-b</code>, <code class="nowrap">--background</code>
     </td>
     <td>
       Run in background
@@ -51,7 +51,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <code>--demo</code>
+      <code class="nowrap">--demo</code>
     </td>
     <td>
       Run in demo mode
@@ -59,7 +59,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <code>--list=FILE</code>
+      <code class="nowrap">--list=FILE</code>
     </td>
     <td>
       Use a text file as list in demo mode
@@ -96,7 +96,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>O</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>O</kbd></span>
     </td>
     <td>
       Connect
@@ -104,7 +104,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>D</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>D</kbd></span>
     </td>
     <td>
       Disconnect
@@ -112,7 +112,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>,</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>,</kbd></span>
     </td>
     <td>
       Show preferences
@@ -120,7 +120,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>?</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>?</kbd></span>
     </td>
     <td>
       Show keyboard shortcuts
@@ -128,7 +128,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>Q</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>Q</kbd></span>
     </td>
     <td>
       Quit the application
@@ -139,7 +139,7 @@ order: 5
 <table>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>J</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>J</kbd></span>
     </td>
     <td>
       Join a network
@@ -147,7 +147,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>N</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>N</kbd></span>
     </td>
     <td>
       Create a network
@@ -155,7 +155,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>F5</kbd> <em>or</em> <span style="white-space: nowrap;"><kbd>Ctrl</kbd>+<kbd>R</kbd></span>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>R</kbd></span> <em>or</em> <kbd>F5</kbd>
     </td>
     <td>
       Refresh the network list
@@ -163,7 +163,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>F</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>F</kbd></span>
     </td>
     <td>
       Search the network list
@@ -171,7 +171,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>M</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>M</kbd></span>
     </td>
     <td>
       Toggle show/hide offline members
@@ -179,7 +179,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>[</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>[</kbd></span>
     </td>
     <td>
       Expand all networks
@@ -187,7 +187,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>]</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>]</kbd></span>
     </td>
     <td>
       Collapse all networks
@@ -195,7 +195,7 @@ order: 5
   </tr>
   <tr>
     <td>
-      <kbd>Ctrl</kbd>+<kbd>1</kbd> <em>to</em> <kbd>Ctrl</kbd>+<kbd>9</kbd>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>1</kbd></span> <em>to</em> <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>9</kbd></span>
     </td>
     <td>
       Execute available commands by corresponding number
