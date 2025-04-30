@@ -12,5 +12,5 @@ order: 6
       <li><b>Collapse</b> networks that you want to keep out of the way.</li>
     </ul>
   </div>
-  <div class="col image" style="flex: min-content;"><img src="/resources/main-window-search.png" srcset="/resources/main-window-search-2x.png 2x" alt="Main Window Search" width="722" height="602" /></div>
+  <div class="col image" style="flex: min-content;"><img src="/resources/main-window-search.png" srcset="/resources/main-window-search-2x.png 2x" alt="Main Window Search" width="704" height="588" /></div>
 </div>

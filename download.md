@@ -31,7 +31,7 @@ order: 3
 <section id="source-tarball" class="primary inverted">
   <div class="wrapper">
     <h2 class="center-text">Source Tarball{% include anchor.html slug='source-tarball' %}</h2>
-    <p>To build Haguichi from source download the <a href="https://launchpad.net/haguichi/1.5/1.5.1/+download/haguichi-1.5.1.tar.xz" target="_blank">source tarball</a> and extract it. Open the text file named <b>INSTALL.md</b> and follow the instructions within.</p>
+    <p>To build Haguichi from source download the <a href="https://launchpad.net/haguichi/1.5/1.5.2/+download/haguichi-1.5.2.tar.xz" target="_blank">source tarball</a> and extract it. Open the text file named <b>INSTALL.md</b> and follow the instructions within.</p>
   </div>
 </section>
 <section id="old-versions" class="primary">
