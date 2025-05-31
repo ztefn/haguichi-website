@@ -12,7 +12,7 @@ If you donate €10 or more, you may provide a website URL that your name in the
 {% assign donations_by_year = site.donations | group_by_exp:"donation", "donation.date | date: '%Y'" %}
 {% for year in donations_by_year reversed %}
   <h3>{{ year.name }}</h3>
-  <ul>
+  <ul class="donations-list">
   {% for donation in year.items reversed %}
     <li>
     {% assign show_website = false %}
@@ -23,11 +23,11 @@ If you donate €10 or more, you may provide a website URL that your name in the
         {% assign show_website = true %}
       {% endif %}
     {% endif %}
-    {% if show_website %}<a href="{{ donation.website }}" rel="nofollow" target="_blank">{% endif %}{{ donation.title }}{% if show_website %}</a>{% endif %},
+    {% if show_website %}<a href="{{ donation.website }}" rel="nofollow" target="_blank">{% endif %}{{ donation.title }}{% if show_website %}</a>{% endif %}
     {% assign amount_split = donation.amount | round: 2 | split: "." %}
     {% assign integral = amount_split[0] %}
     {% assign fractional = amount_split[1] | append: "00" | truncate: 2, "" %}
-    {{ donation.currency }}{{ integral }}.{{ fractional }}
+      <code><span class="currency">{{ donation.currency }}</span><span class="value">{{ integral }}.{{ fractional }}</span></code>
     </li>
   {% endfor %}
   </ul>
