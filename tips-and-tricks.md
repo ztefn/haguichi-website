@@ -68,7 +68,7 @@ order: 5
 </table>
 
 <h2 id="keyboard-shortcuts">Keyboard Shortcuts{% include anchor.html slug='keyboard-shortcuts' %}</h2>
-<h3>General</h3>
+<h3 id="keyboard-shortcuts-general">General{% include anchor.html slug='keyboard-shortcuts-general' %}</h3>
 <table>
   <tr>
     <td>
@@ -96,22 +96,6 @@ order: 5
   </tr>
   <tr>
     <td>
-      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>O</kbd></span>
-    </td>
-    <td>
-      Connect
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>D</kbd></span>
-    </td>
-    <td>
-      Disconnect
-    </td>
-  </tr>
-  <tr>
-    <td>
       <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>,</kbd></span>
     </td>
     <td>
@@ -135,7 +119,26 @@ order: 5
     </td>
   </tr>
 </table>
-<h3>Network List</h3>
+<h3 id="keyboard-shortcuts-connection">Connection{% include anchor.html slug='keyboard-shortcuts-connection' %}</h3>
+<table>
+  <tr>
+    <td>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>O</kbd></span>
+    </td>
+    <td>
+      Connect
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>D</kbd></span>
+    </td>
+    <td>
+      Disconnect
+    </td>
+  </tr>
+</table>
+<h3 id="keyboard-shortcuts-network-list">Network List{% include anchor.html slug='keyboard-shortcuts-network-list' %}</h3>
 <table>
   <tr>
     <td>
@@ -193,6 +196,9 @@ order: 5
       Collapse all networks
     </td>
   </tr>
+</table>
+<h3 id="keyboard-shortcuts-commands">Commands{% include anchor.html slug='keyboard-shortcuts-commands' %}</h3>
+<table>
   <tr>
     <td>
       <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>1</kbd></span> <em>to</em> <span class="nowrap"><kbd>Ctrl</kbd>+<kbd>9</kbd></span>
