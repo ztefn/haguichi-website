@@ -7,8 +7,12 @@ order: 5
 
   1. [Command Line Options](#command-line-options)
   2. [Keyboard Shortcuts](#keyboard-shortcuts)
+      1. [General](#keyboard-shortcuts-general)
+      2. [Connection](#keyboard-shortcuts-connection)
+      3. [Network List](#keyboard-shortcuts-network-list)
+      4. [Commands](#keyboard-shortcuts-commands)
   3. [Command Variables](#command-variables)
-  4. [GSettings](#gsettings) 
+  4. [GSettings](#gsettings)
       1. [Changing the IP and Hostname Used to Check Your Internet Connectivity](#change-internet-check-ip-hostname)
       2. [Setting a Dynamic Nickname](#set-dynamic-nick)
       3. [Customizing the Network List](#customize-network-list)
