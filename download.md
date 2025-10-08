@@ -11,23 +11,23 @@ order: 3
     <p><a class="button" href="https://flathub.org/apps/com.github.ztefn.haguichi" target="_blank" alt="Get it on Flathub">{% include graphics/flathub-badge.svg %}</a></p>
   </div>
 </section>
-<section id="distributions" class="center-text">
-  <div class="wrapper">
+<section id="distributions">
+  <div class="wrapper center-text">
     <h2>Distribution Specific Packages{% include anchor.html slug='distributions' %}</h2>
   </div>
-</section>
-{% assign sorted_downloads = site.downloads | sort:"order" %}
-{% for download in sorted_downloads %}
-<section id="{{ download.slug }}" class="download-group">
-  <div class="wrapper">
-    {% if download.logo %}
-      <div class="logo">{% include {{ download.logo }} %}</div>
-    {% endif %}
-    <h3 class="download-head">{{ download.title }}{% include anchor.html slug=download.slug %}</h3>
-    <div class="download-content">{{ download.content }}</div>
+  {% assign sorted_downloads = site.downloads | sort:"order" %}
+  {% for download in sorted_downloads %}
+  <div class="download-group">
+    <details class="wrapper">
+      <summary>
+        <div class="logo">{% include {{ download.logo }} %}</div>
+        <h3 class="download-head"><span>{{ download.title }}</span>{% include anchor.html slug=download.slug %}</h3>
+      </summary>
+      <div id="{{ download.slug }}" class="download-content">{{ download.content }}</div>
+    </details>
   </div>
+  {% endfor %}
 </section>
-{% endfor %}
 <section id="source-tarball" class="primary inverted">
   <div class="wrapper">
     <h2 class="center-text">Source Tarball{% include anchor.html slug='source-tarball' %}</h2>

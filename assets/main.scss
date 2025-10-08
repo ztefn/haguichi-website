@@ -57,9 +57,9 @@ $primary-bg-color-dark: #4d0502;
 /**
  * Fonts
  */
-@include fontFace('Caveat', 'fonts/caveat');
-@include fontFace('Dosis',  'fonts/dosis');
-@include fontFace('Dosis',  'fonts/dosis-bold', normal, bold);
+@include fontFace("Caveat", "fonts/caveat");
+@include fontFace("Dosis",  "fonts/dosis");
+@include fontFace("Dosis",  "fonts/dosis-bold", normal, bold);
 
 
 /**
@@ -475,7 +475,7 @@ body
       right: 0;
       top: 3px;
 
-      [class*='bar-']
+      [class*="bar-"]
       {
         background: var(--primary-bg-color);
         display: block;
@@ -727,21 +727,43 @@ body
     }
   }
 
-  section.download-group
+  .download-group
   {
-    .wrapper
+    details
     {
       padding: 0 20px 30px;
+
+      summary
+      {
+        list-style-type: none;
+      }
 
       .download-head
       {
         margin: 0;
+
+        span
+        {
+          border-bottom-width: 3px;
+          border-bottom-style: solid;
+          cursor: pointer;
+        }
+      }
+
+      .download-content
+      {
+        scroll-margin-top: 3em;
       }
 
       p
       {
         margin: 0.8em 0;
       }
+    }
+
+    details[open] summary .download-head span
+    {
+      border-bottom-style: none;
     }
 
     .logo
@@ -848,7 +870,7 @@ body
     {
       background: var(--base-bg-color);
       border-radius: 0.5em;
-      content: '';
+      content: "";
       height: 0.4em;
       left: 0.6em;
       position: absolute;
@@ -862,7 +884,7 @@ body
       border-bottom: 0.7em solid transparent;
       border-right: 0.6em solid var(--base-fg-color);
       border-top: 0.7em solid transparent;
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
